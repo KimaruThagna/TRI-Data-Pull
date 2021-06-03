@@ -5,8 +5,6 @@ from selenium.webdriver.support import expected_conditions as EC
 from time import sleep
 from selenium.common.exceptions import TimeoutException
 from selenium.webdriver.chrome.options import Options
-import os
-from glob import glob
 
 PATH = "driver/chromedriver"
 BASE_URL = "https://edap.epa.gov/public/extensions/newTRIsearch/newTRIsearch.html#"

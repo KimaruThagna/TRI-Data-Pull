@@ -1,4 +1,4 @@
-# YourStake Take Away Exercise
+# Take Away Exercise
 **Purpose**:
 Pull data from TRI websites and generate a CSV file with companies, facilities and air pollution data
 # Script Structure and Purpose
