@@ -39,6 +39,6 @@ get_states_list>>data_pull>>[data_processing,find_parent_company]>>env_cleanup
 Below are checks that I would test my script against when putting it into a web app.
 
 
-- That the task runs as a scheduled background task. It takes quite a while anc hence should run in the background.
-- All operations likely to fail are in try catch blocks with appropriate exceptions.
-- Minimizing the `find_parent_company` task by finding the unique TRIDs from a downloaded dataset first instead of looping through entire dataset.
+- That the task runs as a scheduled background task. It takes quite a while anc hence should run in the background. Can be scheduled using `DjangoAPScheduler` library.
+- Grecefully catching failures to prevent program halting- All operations likely to fail are in try catch blocks with appropriate exceptions eg `TimeOutException` from Selenium.
+- Minimizing the `find_parent_company` task - This would be achieved by finding the unique TRIDs from a downloaded dataset first instead of looping through entire dataset.
