@@ -6,7 +6,7 @@ PATH = "driver/chromedriver"
 
 def parent_company(tr_id):
     tr_id = tr_id.replace(" ", "")
-    facility_url = f"https://enviro.epa.gov/facts/tri/ef-facilities/#/Facility/{tr_id}"
+    facility_url = f"https://REDACTED/##/tri/ef-##/#/Facility/{tr_id}"
     driver = webdriver.Chrome(executable_path=PATH)
     driver.get(facility_url)
     sleep(3)
