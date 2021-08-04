@@ -7,7 +7,7 @@ from selenium.common.exceptions import TimeoutException
 from selenium.webdriver.chrome.options import Options
 
 PATH = "driver/chromedriver"
-BASE_URL = "https://edap.epa.gov/public/extensions/newTRIsearch/newTRIsearch.html#"
+BASE_URL = "https://REDACTED/public/extensions/##/##.html#"
 DOWNLOAD_LOCATION = "/home/macbuntu/PycharmProjects/TRI/data"
 chrome_options = Options()
 chrome_options.add_experimental_option(
